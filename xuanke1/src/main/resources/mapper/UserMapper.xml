@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间，指定对应的Dao-->
+<mapper namespace="com.xuanke1.dao.UserDao">
+
+    <!--使用resultType指定输出类型-->
+    <select id="getUserByMessage" resultType="com.xuanke1.bean.User">
+        SELECT * FROM user WHERE username=#{username} and password=#{password}
+    </select>
+
+</mapper>

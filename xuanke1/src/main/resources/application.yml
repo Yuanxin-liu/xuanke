@@ -1,0 +1,19 @@
+server.port: 9000
+
+mybatis:
+  mapper-locations:
+    classpath:mapper/*.xml
+  type-aliases-package: com.xuanke1.bean
+
+#mybaits:
+#  mapper-locations:classpath:mapper/*.xml
+#  type-aliases-package:com.xuanke1.bean
+
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xk?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: nix4278273
